@@ -152,7 +152,7 @@ def log_p(evaluation, simulation):
         normpdf = -y**2 / 2 - np.log(np.sqrt(2 * np.pi))
         return np.mean(normpdf)
     else:
-        logging.warning("evaluation and simulation lists does not have the same length.")
+        logging.warning("evaluation and simulation lists do not have the same length.")
         return np.nan
 
 

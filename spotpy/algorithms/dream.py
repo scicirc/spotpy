@@ -67,7 +67,7 @@ class dream(_algorithm):
                 if par[i] > self.max_bound[i]:
                     par[i] = self.max_bound[i]
         else:
-            print('ERROR: Bounds have not the same lenghts as Parameterarray')
+            print('ERROR: Bounds have not the same lengths as Parameter array')
         return par
 
     def get_regular_startingpoint(self,nChains):
@@ -97,7 +97,7 @@ class dream(_algorithm):
                 if par[i] > self.max_bound[i]:
                     par[i] = self.max_bound[i]
         else:
-            print('ERROR: Bounds have not the same lenghts as Parameterarray')
+            print('ERROR: Bounds have not the same lengths as Parameter array')
         return par
 
     def _get_gamma(self,N):
@@ -220,7 +220,7 @@ class dream(_algorithm):
 
     def sample(self, repetitions,nChains=5, nCr=3, eps=10e-6, convergence_limit=1.2, runs_after_convergence=100,acceptance_test_option=6):
         self.set_repetiton(repetitions)
-        print('Starting the DREAM algotrithm with '+str(repetitions)+ ' repetitions...')
+        print('Starting the DREAM algorithm with '+str(repetitions)+ ' repetitions...')
         if nChains <3:
             print('Please use at least n=3 chains!')
             return None
@@ -260,7 +260,7 @@ class dream(_algorithm):
             self.nChainruns[curChain] +=1
 
 
-        print('Beginn of Random Walk')
+        print('Beginning of Random Walk')
         convergence = False
         #Walf through chains
         self.r_hats=[]
